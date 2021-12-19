@@ -1,10 +1,63 @@
 .wrapper
   width: 100%
   display: flex
-  justify-content: center
+  flex-direction: column
+  align-content: center
+  flex-wrap: wrap
   padding: 0 15px
 
+.input_form
+  position: relative
+
 .todo_item
+  margin-top: 15px
   width: 540px
   display: flex
   justify-content: space-between
+  &.item_todo
+    background-color: seagreen
+    padding: 0 10px
+    border-radius: 10px
+    border: 1px solid #1f693f
+    &:first-child
+      margin-top: 0
+
+.todo_text
+  color: whitesmoke
+
+.todo_input
+  -webkit-appearance: none
+  border: 0
+  font-size: 18px
+  padding: 0 5px
+  border-bottom: 1px solid #1f693f
+  outline: none
+  line-height: 45px
+  width: 100%
+  box-shadow: none
+  background-color: transparent
+
+
+.btn_add
+  position: absolute
+  top: 12px
+  right: 15px
+  --ggs: 1.5
+  border: none
+  background-color: transparent
+  transition:  0.2s
+  &:hover
+    cursor: pointer
+    color: #1f693f
+    transform: rotateX(30deg)
+
+.btn_close
+  --ggs: 1.5
+  border: none
+  background-color: transparent
+  transition:  0.2s
+  &:hover
+    cursor: pointer
+    color: whitesmoke
+
+

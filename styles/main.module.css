@@ -2,7 +2,35 @@
   padding: 0;
   margin: 0 auto;
   height: 100vh;
-  width: 100vw;
+  max-width: 1080px;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  line-height: 60px;
+}
+
+.navbar_nav {
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar_item {
+  text-decoration: none;
+}
+.navbar_item:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
+
+.navbar_link {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.module.css.map */
