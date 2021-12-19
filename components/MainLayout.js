@@ -1,8 +1,9 @@
 import Link from "next/link";
+import styles from "../styles/main.module.sass"
 
 export default function mainLayout({ children }){
     return (
-        <>
+        <div className={styles.main_wrapper}>
             <nav>
                 <ul>
                     <li>
@@ -20,6 +21,6 @@ export default function mainLayout({ children }){
             <main>
                 {children}
             </main>
-        </>
+        </div>
     )
 }
