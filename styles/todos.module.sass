@@ -29,7 +29,7 @@
   -webkit-appearance: none
   border: 0
   font-size: 18px
-  padding: 0 5px
+  padding: 0 50px 0 10px
   border-bottom: 1px solid #1f693f
   outline: none
   line-height: 45px
@@ -42,22 +42,31 @@
   position: absolute
   top: 12px
   right: 15px
-  --ggs: 1.5
-  border: none
-  background-color: transparent
-  transition:  0.2s
   &:hover
     cursor: pointer
     color: #1f693f
-    transform: rotateX(30deg)
+    transform: rotate(360deg)
 
 .btn_close
+  position: relative
+  right: -70px
+  &:hover
+    cursor: pointer
+    color: rgba(171, 239, 145, 0.4)
+    transform: rotate(-20deg)
+
+.btn_delete
+  transform: rotate(45deg)
+  transition: ease 2s
+  &:hover
+    transform: rotate(60deg)
+    color: #af2020
+
+.btn
   --ggs: 1.5
   border: none
   background-color: transparent
   transition:  0.2s
   &:hover
     cursor: pointer
-    color: whitesmoke
-
 
